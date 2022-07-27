@@ -288,9 +288,9 @@ transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 .hero__button:focus {
 background-color: #188CE8; } */
 
-/* Модальне вікно */
+/* Modal window */
 
-.backdrop {
+/* .backdrop {
     position: fixed;
     top: 0;
     left: 0;
@@ -358,7 +358,7 @@ background-color: #188CE8; } */
 .modal__close-btn:hover,
 .modal__close-btn:focus > .modal-icon {
     fill: var(--accent);
-}
+} */
 
 /* Форма модального вікна*/
 
@@ -788,7 +788,7 @@ margin-left: 30px;
 
 /* Секция Footer bg */
 
-.footer {
+/* .footer {
 padding-top: 60px;
 padding-bottom: 60px;
 background-color: rgba(47, 48, 58, 1);
@@ -831,11 +831,11 @@ align-items: baseline;
 
 .footer__list {
 padding-left: 0;
-}
+} */
 
 /* Footer social media icons */
 
-.call-to-action-box {
+/* .call-to-action-box {
     margin-left: 70px;
 }
 
@@ -846,11 +846,11 @@ letter-spacing: 0.03em;
 text-transform: uppercase;
 
 color: #FFFFFF;
-}
+} */
 
 /* Оформлення іконок в footer */
 
-.call-to-action-list {
+/* .call-to-action-list {
 padding: 0;
 margin-top: 20px;
 display: flex;
@@ -877,7 +877,7 @@ justify-content: center;
     
 .call-to-action-item + .call-to-action-item {
 margin-left: 10px;
-}
+} */
 
 /* Footer form */
 
