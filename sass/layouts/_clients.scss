@@ -2,6 +2,7 @@
 
 
 .clients {
+    @extend %section;
 
     &__title {
 

@@ -1,6 +1,7 @@
 // Portfolio filtr
 
 .portfolio {
+    @extend %section;
 
     &__button {
 

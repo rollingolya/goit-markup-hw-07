@@ -1,6 +1,7 @@
 // Секція Наша команда
 
 .team {
+    @extend %section;
     background-color: rgba(245, 244, 250, 1);
 
     &__title {

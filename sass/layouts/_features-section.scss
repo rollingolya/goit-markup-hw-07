@@ -1,6 +1,7 @@
 // Секція features
 
 .features {
+    @extend %section;
 
     &__list {
         display: flex;
