@@ -50,7 +50,7 @@
           </ul>
         </nav>
         <!-- Пошта та телефон -->
-          <div class="header__group group__header">
+          <div class="header__group">
             <ul class="header__list">
               <li class="header__item">
                 <a 
@@ -76,84 +76,85 @@
       <!-- Секция hero -->
       <section class="hero overlay">
         <div>
-          <h1>Эффективные решения для вашего бизнеса</h1>
-          <button class="text-button" type="button" data-modal-open>Заказать услугу</button>
+          <h1 class="hero__title">Эффективные решения для вашего бизнеса</h1>
+          <button class="hero__button button" type="button" data-modal-open>Заказать услугу</button>
         </div>
       </section>
       <!-- Модальне вікно -->
       <div class="backdrop is-hidden" data-modal>
         <div class="modal">
-          <button class="modal-close-btn" type="button" data-modal-close>
-            <svg class="modal-icon" width="18" height="18">
-              <use class="modal-img" href="./images/icons-svg.svg#icon-close"></use>
+          <button class="modal__close-btn" type="button" data-modal-close>
+            <svg class="modal__icon" width="18" height="18">
+              <use class="modal__img" href="./images/icons-svg.svg#icon-close"></use>
             </svg>
           </button>
           <!-- Форма -->
-          <form class="order-form" name="order-service">
-            <strong class="form-call-action">Оставьте свои данные, мы вам перезвоним</strong>
-              <div class="form-group">
-                <label class="form-item">
-                  <span class="form-text">Имя</span>
+          <form class="form-order" name="form-order">
+            <strong class="form-order__call-action">Оставьте свои данные, мы вам перезвоним</strong>
+              <div class="form-order__group">
+                <label class="form-order__item">
+                  <span class="form-order__text">Имя</span>
                   <input 
-                  class="form-field" 
+                  class="form-order__field" 
                   type="text" 
                   name="user-name"/>
-                  <svg class="form-icon" width="18" height="18">
-                    <use class="form-img" href="./images/icons-svg.svg#icon-person-form"></use>
+                  <svg class="form-order__icon" width="18" height="18">
+                    <use class="form-order__img" href="./images/icons-svg.svg#icon-person-form"></use>
                   </svg>
                 </label>
               </div>
-              <div class="form-group">
-                <label class="form-item">
-                  <span class="form-text">Телефон</span>
+              <div class="form-order__group">
+                <label class="form-order__item">
+                  <span class="form-order__text">Телефон</span>
                   <input 
-                  class="form-field" 
+                  class="form-order__field" 
                   type="tel" 
                   name="user-phone"/>
-                  <svg class="form-icon" width="21" height="18">
-                    <use class="form-img" href="./images/icons-svg.svg#icon-phone-form"></use>
+                  <svg class="form-order__icon" width="21" height="18">
+                    <use class="form-order__img" href="./images/icons-svg.svg#icon-phone-form"></use>
                   </svg>
                 </label>
               </div>
-              <div class="form-group">
-                <label class="form-item">
-                <span class="form-text">Почта</span>
+              <div class="form-order__group">
+                <label class="form-order__item">
+                <span class="form-order__text">Почта</span>
                 <input 
-                class="form-field" 
+                class="form-order__field" 
                 type="email" 
                 name="user-email"/>
-                <svg class="form-icon" width="18" height="18">
-                  <use class="form-img" href="./images/icons-svg.svg#icon-email-form"></use>
+                <svg class="form-order__icon" width="18" height="18">
+                  <use class="form-order__img" href="./images/icons-svg.svg#icon-email-form"></use>
                 </svg>
               </label>
             </div>
-              <div class="form-group form-group-last">
-                <label class="label-comment">
-                  <span class="form-text">Комментарий</span>
+              <div class="form-order__group form-order__group-last">
+                <label class="form-order__comment">
+                  <span class="form-order__text">Комментарий</span>
                   <textarea
-                  class="form-field"
+                  class="form-order__field"
                   name="user-comment" 
                   cols="30" 
                   rows="10" 
                   placeholder="Введите текст"></textarea>
                 </label>
               </div>
-              <label class="form-checkbox">
+              <!-- Checkbox -->
+              <label class="checkbox">
                 <input 
-                class="visually-hidden form-checkbox-input" 
+                class="checkbox__input visually-hidden" 
                 type="checkbox" 
                 name="user-agreement" />
-                <span class="form-checkbox-custom-checkbox">
-                  <svg class="form-checkbox-icon" width="11" height="8">
+                <span class="checkbox__custom-checkbox">
+                  <svg class="checkbox__icon" width="11" height="8">
                     <use href="./images/icons-svg.svg#icon-check-mark"></use>
                   </svg>
                 </span>
                 <span>Соглашаюсь с рассылкой и принимаю 
                   <a hres="Посилання на Условия договора" 
-                  class="form-checkbox-link">Условия договора</a>
+                  class="checkbox__link">Условия договора</a>
                 </span>
               </label>
-              <button class="btn-form" type="submit">Отправить</button>
+              <button class="form-order__btn button" type="submit">Отправить</button>
           </form>
         </div>
       </div>
@@ -219,27 +220,27 @@
           <ul class="what-we-do__list">
             <li class="what-we-do__item">
               <img
-                class="what-we-do__img img-first"
+                class="what-we-do__img"
                 src="images/box1.jpg"
                 alt="Программирование за планшетом"
                 width="370"/>
-                <p class="what-we-do__text first-text">Десктопные приложения</p>
+                <p class="what-we-do__text what-we-do__text-frst">Десктопные приложения</p>
             </li>
             <li class="what-we-do__item">
               <img
-                class="what-we-do__img img-scnd"
+                class="what-we-do__img"
                 src="images/box2.jpg"
                 alt="Разработка мобильного приложения"
                 width="370"/>
-                <p class="what-we-do__text scnd-text">Мобильные приложения</p>
+                <p class="what-we-do__text what-we-do__text-scnd">Мобильные приложения</p>
             </li>
             <li class="what-we-do__item">
               <img
-                class="what-we-do__img img-thrd"
+                class="what-we-do__img"
                 src="images/box3.jpg"
                 alt="Рисование на планшете"
                 width="370"/>
-                <p class="what-we-do__text thrd-text">Дизайнерские решения</p>
+                <p class="what-we-do__text what-we-do__text-thrd">Дизайнерские решения</p>
             </li>
           </ul>
         </div>
@@ -498,78 +499,78 @@
         </div>
       </section>
       <!-- Секція Постоянные клиенты -->
-      <section class="section">
+      <section class="clients section">
         <div class="container">
-          <h2 class="clients title">Постоянные клиенты</h2>
-          <ul class="client-list">
-            <li class="client-item">
+          <h2 class="clients__title title">Постоянные клиенты</h2>
+          <ul class="client__list">
+            <li class="client__item">
               <a
-                class="client-link"
+                class="client__link"
                 href=""
                 target="_blank"
                 rel="noopener noreferrer"
                 aria-label="ya-co company">
-                <svg class="client-icon" width="106" height="60">
+                <svg class="client__icon" width="106" height="60">
                   <use href="./images/icons-svg.svg#icon-client-1"></use>
                 </svg>
               </a>
             </li>
-            <li class="client-item">
+            <li class="client__item">
               <a
-                class="client-link"
+                class="client__link"
                 href=""
                 target="_blank"
                 rel="noopener noreferrer"
                 aria-label="company tagline here">
-                <svg class="client-icon" width="106" height="60">
+                <svg class="client__icon" width="106" height="60">
                   <use href="./images/icons-svg.svg#icon-client-2"></use>
                 </svg>
               </a>
             </li>
-            <li class="client-item">
+            <li class="client__item">
               <a
-                class="client-link"
+                class="client__link"
                 href=""
                 target="_blank"
                 rel="noopener noreferrer"
                 aria-label="company">
-                <svg class="client-icon" width="106" height="60">
+                <svg class="client__icon" width="106" height="60">
                   <use href="./images/icons-svg.svg#icon-client-3"></use>
                 </svg>
               </a>
             </li>
-            <li class="client-item">
+            <li class="client__item">
               <a
-                class="client-link"
+                class="client__link"
                 href=""
                 target="_blank"
                 rel="noopener noreferrer"
                 aria-label="foster peters">
-                <svg class="client-icon" width="106" height="60">
+                <svg class="client__icon" width="106" height="60">
                   <use href="./images/icons-svg.svg#icon-client-4"></use>
                 </svg>
               </a>
             </li>
-            <li class="client-item">
+            <li class="client__item">
               <a
-                class="client-link"
+                class="client__link"
                 href=""
                 target="_blank"
                 rel="noopener noreferrer"
                 aria-label="brand company">
-                <svg class="client-icon" width="106" height="60">
+                <svg class="client__icon" width="106" height="60">
                   <use href="./images/icons-svg.svg#icon-client-5"></use>
                 </svg>
               </a>
             </li>
-            <li class="client-item">
+            <li class="client__item">
               <a
-                class="client-link"
+                class="client__link"
                 href=""
                 target="_blank"
                 rel="noopener noreferrer"
                 aria-label="company tag line">
-                <svg class="client-icon" width="106" height="60">
+                <svg class="client__icon" width="106" height="60">
                   <use href="./images/icons-svg.svg#icon-client-6"></use>
                 </svg>
               </a>
@@ -588,8 +589,8 @@
           aria-label="Посилання на студію" 
           lang="en-us">Web<span 
           class="logo__studio logo__studio--light">Studio</span></a>
-            <address class="header__group">
-              <ul class="footer__list list__footer">
+            <address class="footer__group">
+              <ul class="footer__list">
                 <li class="footer__item">
                   <a
                     class="footer__link link__footer footer__link--light link"
@@ -661,18 +662,18 @@
           </ul>
         </div>
         <!-- Footer form -->
-        <div class="follow-form-box">
-          <strong class="follow-form-text">Подпишитесь на рассылку</strong>
+        <div class="follow-form__box">
+          <strong class="follow-form__text">Подпишитесь на рассылку</strong>
           <form name="follow-form">
             <label>
               <input 
-              class="follow-form-field" 
+              class="follow-form__field" 
               type="email" 
               name="user-email"
               placeholder="E-mail"/>
             </label>
-            <button class="follow-form-bth" type="submit">Подписаться
-              <svg class="follow-icon" width="24" height="24">
+            <button class="button button__footer" type="submit">Подписаться
+              <svg class="button__icon icon__button" width="24" height="24">
                 <use href="./images/icons-svg.svg#icon-telegram"></use>
               </svg>
             </button>
