@@ -1,0 +1,41 @@
+// Оформлення іконок
+
+.social-media {
+
+    display: flex;
+    justify-content: center;
+    padding-left: 0;
+    
+    &__link {
+
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        height: 44px;
+        width: 44px;
+        
+        background-color: #FFFFFF;
+        border-radius: 50%;
+        
+        fill: rgba(175, 177, 184, 1);
+        
+        transition-property: fill, background-color;
+        transition-duration: 250ms;
+        transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+        
+    }
+        
+    &__link:hover,
+    &__link:focus {
+
+        fill: rgba(255, 255, 255, 1);
+        background-color: var(--accent);
+    } 
+        
+    & &__item + &__item {
+
+        margin-left: 10px;
+    }
+
+}
+    
