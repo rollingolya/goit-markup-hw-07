@@ -237,7 +237,7 @@ fill: currentColor;
 
 /* Overlay */
 
-/* .overlay {
+/* .hero-overlay {
 max-width: 1600px;
 height: 600px;
 margin-left: auto;
@@ -362,7 +362,7 @@ background-color: #188CE8; } */
 
 /* Форма модального вікна*/
 
-.form-order {
+/* .form-order {
     display: flex;
     flex-direction: column;
 }
@@ -374,9 +374,9 @@ background-color: #188CE8; } */
     line-height: 1.15;
     text-align: center;
     letter-spacing: 0.03em;
-}
+} */
 
-.form-order__group input {
+/* .form-order__group input {
 padding: 12px 16px;
 padding-left: 40px;
 
@@ -401,9 +401,9 @@ fill: var(--accent);
 input:focus,
 .form-order__field:focus {
     border-color: var(--accent);
-}
+} */
 
-.form-order__text {
+/* .form-order__text {
     display: inline-block;
     margin-bottom: 4px;
 
@@ -463,9 +463,9 @@ textarea::placeholder {
 .form-order__comment {
     width: 448px;
     height: 138px;
-} 
+}  */
 
-.form-order__btn {
+/* .form-order__btn {
     display: inline-flex;
     align-items: center;
     justify-content: center;
@@ -479,11 +479,11 @@ textarea::placeholder {
 .form-order__btn:hover,
 .form-order__btn:focus {
     background-color: #188CE8;
-}
+} */
 
 /* Checkbox */
 
-.checkbox {
+/* .checkbox {
     position: relative;
     align-items: center;
     justify-content: center;
@@ -529,7 +529,7 @@ textarea::placeholder {
 
 .checkbox__icon {
     fill: #FFFFFF;
-}
+} */
 
 /* Секция features */
 
@@ -881,7 +881,7 @@ margin-left: 10px;
 
 /* Footer form */
 
-.follow-form__box {
+/* .follow-form__box {
     margin-left: auto;
 }
 
@@ -921,11 +921,11 @@ margin-left: 10px;
     letter-spacing: 0.03em;
 
     color: rgba(255, 255, 255, 0.6);
-}
+} */
 
 /* Оформлення кнопки в Footer */
 
-.button__footer {
+/* .button__footer {
     display: inline-flex;
     align-items: center;
     text-align: center;
@@ -934,16 +934,16 @@ margin-left: 10px;
 
 .icon__button {
     margin-left: 10px;
-}
+} */
 
 /* Portfolio page */
 
-ul {list-style: none;
-}
+/* ul {list-style: none;
+} */
 
 /* Фильтр портфолио */
 
-.portfolio__button {
+/* .portfolio__button {
 display: inline-block;
 justify-content: space-between; 
 
@@ -1002,23 +1002,20 @@ justify-content: center;
 
 .portfolio__list .portfolio__item:not(:last-child) {
     margin-right: 8px;
-}
+} */
 
 /* Service gallery */
 
-.all-services {
---items: 3;
-}
-
-.name-service {font-weight: 700;
-font-size: 18px;
-line-height: 2;
-letter-spacing: 0.06em;
+/* .overlay__title {
+    font-weight: 700;
+    font-size: 18px;
+    line-height: 2;
+    letter-spacing: 0.06em;
     
-color: #212121;
+    color: #212121;
 }
 
-.type-service { font-weight: 400;
+.overlay__text { font-weight: 400;
     font-size: 16px;
     line-height: 1.88;
     letter-spacing: 0.03em;
@@ -1032,33 +1029,16 @@ color: #212121;
     border-top: transparent;
     width: 370px;
     padding: 20px 24px;
-}
-
-.services-item {
-    width: 370px;
-
-    border-bottom: 1px solid #ECECEC;
-    box-sizing: border-box;
-
-    transition-property: background-color, box-shadow;
-    transition-duration: 250ms;
-    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
-}
-
-.services-item:hover,
-.services-item:focus {
-    background-color: rgba(33, 150, 243, 0.9);
-    box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06), 1px 4px 6px rgba(0, 0, 0, 0.16); 
-}
+} */
 
 /* Portfolio оверлей */
 
-.portfolio-overlay {
+/* .overlay {
     position: relative; 
     overflow: hidden;
 }
 
-.portfolio-desc {
+.overlay__desc {
     position: absolute;
     top: 0;
     left: 0;
@@ -1087,13 +1067,13 @@ color: #212121;
     transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-.services-item:hover .portfolio-desc,
-.services-item:focus .portfolio-desc {
+.card-set-item--focused:hover .overlay__desc,
+.card-set-item--focused:focus .overlay__desc {
     transform: translateY(0%);
     }
 
- .portfolio-img {
+ .overlay__img {
     display: block;
     max-width: 100%;
     height: auto;
-} 
+}  */
